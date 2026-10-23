@@ -18,12 +18,12 @@ function answer(k){var q=Q[i];var ok=k===q.a;if(ok)score++;res.push(ok);
  setTimeout(function(){document.getElementById('qz-a').scrollIntoView({behavior:'smooth',block:'nearest'})},60);}
 function rank(s,n){if(s===n)return'Liner notes level';if(s>=n-3)return'Front row';if(s>=n/2)return'Getting warm';return'Start with Daylight';}
 function end(){var n=Q.length;var r=rank(score,n);
- var line='I got '+score+'/'+n+' on \u201cHow well do you know Muse?\u201d John Legend x Pharrell. Every song behind it, in one playlist: '+PL;
+ var line='I got '+score+'/'+n+' on \u201cHow well do you know Muse?\u201d John Legend x Pharrell. Listen to Muse: '+PL;
  box.innerHTML='<div class="qz-score"><p class="qz-top" style="justify-content:center">Your score</p><p class="qz-num">'+score+'<small>/'+n+'</small></p><p class="qz-rank">'+r+'</p><div class="qz-dots">'+res.map(function(o){return '<i class="'+(o?'ok':'')+'"></i>'}).join('')+'</div>'+
- '<div class="qz-share" id="qz-line">'+esc(line)+'</div><div class="qz-actions"><button class="qz-btn" type="button" id="qz-sh">Share your score</button><a class="qz-btn gold" href="'+PL+'" target="_blank" rel="noopener">Play The Roots of Muse</a><button class="qz-btn ghost" type="button" id="qz-re">Try again</button></div>'+(window.QZ_MORE||'')+'</div>';
+ '<div class="qz-share" id="qz-line">'+esc(line)+'</div><div class="qz-actions"><button class="qz-btn" type="button" id="qz-sh">Share your score</button><a class="qz-btn gold" href="'+PL+'" target="_blank" rel="noopener">Listen to Muse</a><button class="qz-btn ghost" type="button" id="qz-re">Try again</button></div>'+(window.QZ_MORE||'')+'</div>';
  document.getElementById('qz-re').addEventListener('click',function(){i=0;score=0;res=[];show();});
  document.getElementById('qz-sh').addEventListener('click',function(){var b=this;
-  var txt='I got '+score+'/'+n+' on \u201cHow well do you know Muse?\u201d John Legend x Pharrell. Every song behind it, in one playlist:';
+  var txt='I got '+score+'/'+n+' on \u201cHow well do you know Muse?\u201d John Legend x Pharrell. Listen to Muse:';
   if(navigator.share){navigator.share({text:txt,url:PL}).catch(function(){});return;}
   var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Share your score'},1800)};
   if(navigator.clipboard)navigator.clipboard.writeText(line).then(done,done);else done();});

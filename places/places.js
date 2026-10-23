@@ -35,10 +35,10 @@ var cards=[].slice.call(document.querySelectorAll('.pl-stop,.pl-end'));
 function pick(){var mapH=window.innerWidth>=900?0:document.querySelector('.pl-mapwrap').offsetHeight;
  var line=mapH+(window.innerHeight-mapH)*0.42;var best=-1;
  for(var j=0;j<cards.length;j++){var r=cards[j].getBoundingClientRect();if(r.top<=line)best=j;}
- if(best<0){if(cur!==-1){cur=-1;map.flyToBounds(all,{padding:[24,24],duration:reduce?0:1});label.innerHTML='<b>16</b>stops across 13 places';}return;}
+ if(best<0){if(cur!==-1){cur=-1;map.flyToBounds(all,{padding:[24,24],duration:reduce?0:1});label.innerHTML='Springfield to Muse';}return;}
  var c=cards[best];go(c.classList.contains('pl-end')?S.length:+c.getAttribute('data-i'));}
 var t=null;window.addEventListener('scroll',function(){if(t)return;t=requestAnimationFrame(function(){t=null;pick()})},{passive:true});
 window.addEventListener('resize',function(){map.invalidateSize();pick()});
-label.innerHTML='<b>16</b>stops across 13 places';
+label.innerHTML='Springfield to Muse';
 setTimeout(function(){map.invalidateSize();pick()},200);
 })();

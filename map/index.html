@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Six Degrees of Legend · The Roots of Muse</title>
-<meta name="description" content="Pick any artist and see the chain of real, sourced connections that leads to John Legend. Songs, years, places, from a church choir in Scranton to Pharrell's studio in Paris.">
+<meta name="description" content="Pick an artist and see the chain of real, sourced connections that leads to John Legend. Songs, years, places, from a church choir in Scranton to Pharrell's studio in Paris.">
 <meta name="theme-color" content="#0e0d0b">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Six Degrees of Legend">
-<meta property="og:description" content="Pick any artist. See the chain to John Legend. Every link sourced.">
+<meta property="og:description" content="Pick an artist. See the chain to John Legend. Every link sourced.">
 <meta property="og:image" content="https://themuselegend.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/josefin-sans.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,27 +17,27 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="map.css">
+<link rel="stylesheet" href="/assets/rm.css">
 </head>
 <body class="mappage">
 <a class="skip" href="#az">Skip to the A to Z list of people</a>
-<nav class="topbar" aria-label="Site">
-  <a class="tb-home" href="../">&larr; The Roots of Muse</a>
-  <a class="tb-listen" href="https://open.spotify.com/playlist/4FjWJgicxwa83fX1msMWgT" target="_blank" rel="noopener"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>Listen: Roots of Muse playlist</a>
-</nav>
+<nav class="rm-nav" aria-label="The Roots of Muse"><div class="rm-nav-in"><a href="/">Story</a><a href="/tracks/">Tracks</a><a href="/map/" aria-current="page">Six Degrees</a><a href="/deep-cuts/">Deep Cuts</a><a href="/timeline/">Timeline</a><a href="/places/">Places</a><a href="/quiz/">Quiz</a><a href="/radio/">Radio</a></div></nav>
+
+
 <header class="mhead">
-  <p class="kicker">The Co-Sign Map</p>
+  <p class="kicker">The Roots of Muse</p>
   <h1 class="mtitle">Six Degrees <span>of Legend</span></h1>
-  <p class="mlede">Pick any artist. See how they connect to John Legend, one real link at a time: the song, the year, the place, and where it is written down.</p>
-  <p class="mstats" id="mstats"></p>
+  <p class="mlede">Pick an artist on the map. See how they connect to John Legend, one real link at a time: the song, the year, the place, and where it is written down.</p>
+  
 </header>
 <main id="main">
 <section class="finder" aria-label="Find a connection">
   <div class="sbox" id="sbox">
-    <label class="slab" for="q">Pick any artist</label>
+    <label class="slab" for="q">Pick an artist</label>
     <div class="srow">
       <div class="sfield">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-        <input id="q" type="search" placeholder="Artist, song or city" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="sres" aria-autocomplete="list">
+        <input id="q" type="search" placeholder="Tap to see all" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="sres" aria-autocomplete="list">
       </div>
       <button class="rand" id="rand" type="button" aria-label="Pick a random artist"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.6" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>Random</button>
     </div>
@@ -48,7 +48,7 @@
       <button type="button" class="toreset" id="toreset" hidden>Back to John Legend</button>
     </div>
     <div class="sbox2" id="sbox2" hidden>
-      <div class="sfield"><input id="q2" type="search" placeholder="Connect to which artist?" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="sres2" aria-autocomplete="list"></div>
+      <div class="sfield"><input id="q2" type="search" placeholder="Tap to pick who to connect to" autocomplete="off" autocapitalize="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="sres2" aria-autocomplete="list"></div>
       <ul class="sres" id="sres2" role="listbox" hidden></ul>
     </div>
     <p class="tries" id="tries"></p>
@@ -60,7 +60,7 @@
   <div class="legend" role="group" aria-label="Edge colors. Tap to show or hide a type">
     <button class="chip on" data-type="collab" aria-pressed="true"><i></i><b>Collab</b><span>made a song or record together</span></button>
     <button class="chip on" data-type="met" aria-pressed="true"><i></i><b>Met</b><span>how and where they met</span></button>
-    <button class="chip on" data-type="cosign" aria-pressed="true"><i></i><b>Co-sign</b><span>signed, mentored or vouched</span></button>
+    <button class="chip on" data-type="signed" aria-pressed="true"><i></i><b>Signed</b><span>signed, mentored or vouched</span></button>
     <button class="chip on" data-type="inspo" aria-pressed="true"><i></i><b>Inspo</b><span>named as an influence on record</span></button>
   </div>
   <div class="canvaswrap" id="wrap">
@@ -118,10 +118,12 @@
     <p class="credits">Type: headings and names in Josefin Sans, a thin geometric face close to the John Legend wordmark. Body in Inter.</p>
     <p class="credits">Graph data: <a href="graph.json">graph.json</a></p>
     <p class="madeby">Made by Drew Nagda</p>
-    <p class="footnav"><a href="../">The Roots of Muse</a> · <a href="../then-and-now/">Then &amp; Now</a> · <a href="../deep-cuts/">Deep Cuts</a> · <a href="../places/">Places</a> · <a href="../quiz/">Quiz</a> · <a href="../radio/">Radio</a> · <a href="https://open.spotify.com/playlist/4FjWJgicxwa83fX1msMWgT" target="_blank" rel="noopener">Roots of Muse playlist</a></p>
+    
   </div>
 </footer>
 <script src="graph-data.js"></script>
 <script src="map.js"></script>
+<footer class="rm-foot" aria-label="Official links"><p class="rm-off"><span class="rm-off-l">Official</span><a href="https://store.johnlegend.com/" target="_blank" rel="noopener">Store</a><span aria-hidden="true">·</span><a href="https://johnlegend.com/" target="_blank" rel="noopener">johnlegend.com</a><span aria-hidden="true">·</span><span class="rm-off-l">Listen</span><a href="https://open.spotify.com/album/5LheOmMsCEU09vOdcp0ka9" target="_blank" rel="noopener">Spotify</a><span aria-hidden="true">·</span><a href="https://music.apple.com/us/album/muse/6808358301" target="_blank" rel="noopener">Apple Music</a></p><p class="rm-fine">A fan tribute to Muse by John Legend. Not affiliated with the artist or label.</p></footer>
+<script>(function(){var a=document.querySelector(".rm-nav a[aria-current=page]"),s=a&&a.parentNode;if(s&&s.scrollWidth>s.clientWidth){s.scrollLeft=a.offsetLeft-(s.clientWidth-a.offsetWidth)/2;}})();</script>
 </body>
 </html>

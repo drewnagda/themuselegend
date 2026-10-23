@@ -13,11 +13,14 @@
 <link rel="preload" href="fonts/josefin-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="radio.css">
+<link rel="stylesheet" href="/assets/rm.css">
 </head>
 <body>
+
+<nav class="rm-nav" aria-label="The Roots of Muse"><div class="rm-nav-in"><a href="/">Story</a><a href="/tracks/">Tracks</a><a href="/map/">Six Degrees</a><a href="/deep-cuts/">Deep Cuts</a><a href="/timeline/">Timeline</a><a href="/places/">Places</a><a href="/quiz/">Quiz</a><a href="/radio/" aria-current="page">Radio</a></div></nav>
 <div class="grain" aria-hidden="true"></div>
 
-<nav class="topnav" aria-label="Roots of Muse"><a href="/">Roots of Muse</a><a href="/then-and-now/">Then &amp; Now</a><a href="/map/">Co-Sign Map</a><a href="/deep-cuts/">Deep Cuts</a><a href="/places/">Places</a><a href="/quiz/">Quiz</a><a href="/radio/" aria-current="page">Radio</a></nav>
+
 
 <header class="mast">
   <div class="brand">
@@ -131,5 +134,7 @@
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+<footer class="rm-foot" aria-label="Official links"><p class="rm-off"><span class="rm-off-l">Official</span><a href="https://store.johnlegend.com/" target="_blank" rel="noopener">Store</a><span aria-hidden="true">·</span><a href="https://johnlegend.com/" target="_blank" rel="noopener">johnlegend.com</a><span aria-hidden="true">·</span><span class="rm-off-l">Listen</span><a href="https://open.spotify.com/album/5LheOmMsCEU09vOdcp0ka9" target="_blank" rel="noopener">Spotify</a><span aria-hidden="true">·</span><a href="https://music.apple.com/us/album/muse/6808358301" target="_blank" rel="noopener">Apple Music</a></p><p class="rm-fine">A fan tribute to Muse by John Legend. Not affiliated with the artist or label.</p></footer>
+<script>(function(){var a=document.querySelector(".rm-nav a[aria-current=page]"),s=a&&a.parentNode;if(s&&s.scrollWidth>s.clientWidth){s.scrollLeft=a.offsetLeft-(s.clientWidth-a.offsetWidth)/2;}})();</script>
 </body>
 </html>

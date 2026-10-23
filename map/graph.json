@@ -1,11 +1,11 @@
 {
- "title": "The Co-Sign Map: John Legend",
+ "title": "Six Degrees of Legend: John Legend",
  "built": "2026-10-22",
  "types": {
   "met": "How and where they met",
   "collab": "Songs and records made together",
   "inspo": "Inspiration on record: named muses, Desert Island Discs, samples",
-  "cosign": "Signings, mentoring, the call that started Muse"
+  "signed": "Signings, mentoring, the call that started Muse"
  },
  "nodes": [
   {
@@ -119,7 +119,7 @@
    "name": "Kawan \"KP\" Prather",
    "role": "Executive, songwriter",
    "group": "muse",
-   "blurb": "Atlanta. Dungeon Family DJ, LaFace A&R for Usher and OutKast, A&R on John's Evolver in 2008. Eighteen years later, a co-writer on five Muse songs.",
+   "blurb": "Atlanta. Dungeon Family DJ, LaFace A&R for Usher and OutKast, A&R on John's Evolver in 2008. Eighteen years later, a co-writer on five Muse songs and a background voice on a sixth.",
    "track": {
     "title": "Get Back",
     "artist": "John Legend & Pharrell Williams",
@@ -282,7 +282,7 @@
    "id": "kanye-west",
    "name": "Kanye West",
    "role": "Rapper, producer",
-   "group": "cosign",
+   "group": "signed",
    "blurb": "Signed John as the first artist on GOOD Music in 2004.",
    "size": "s",
    "photo": {
@@ -317,7 +317,7 @@
    "id": "j-ivy",
    "name": "J. Ivy",
    "role": "Poet",
-   "group": "cosign",
+   "group": "signed",
    "blurb": "The poet who heard John Stephens sing and started calling him John Legend.",
    "photo": {
     "file": "img/j-ivy.jpg",
@@ -451,7 +451,7 @@
    "id": "estelle",
    "name": "Estelle",
    "role": "Singer",
-   "group": "cosign",
+   "group": "signed",
    "blurb": "London. John mentored her, produced her debut, signed her to his Homeschool Records and co-wrote American Boy.",
    "photo": {
     "file": "img/estelle.jpg",
@@ -2022,7 +2022,7 @@
    "id": "e004",
    "from": "kawan-prather",
    "to": "usher",
-   "type": "cosign",
+   "type": "signed",
    "year": 1997,
    "year_label": "1990s",
    "year_approx": true,
@@ -2125,7 +2125,7 @@
    "id": "e012",
    "from": "pharrell",
    "to": "clipse",
-   "type": "cosign",
+   "type": "signed",
    "year": 2001,
    "title": "First signing to Star Trak",
    "story": "Pharrell signed Clipse as the first act on his new Star Trak imprint.",
@@ -2146,7 +2146,7 @@
    "id": "e014",
    "from": "john-legend",
    "to": "j-ivy",
-   "type": "cosign",
+   "type": "signed",
    "year": 2003,
    "year_label": "College Dropout sessions",
    "year_approx": true,
@@ -2173,10 +2173,10 @@
    "year": 2003,
    "year_label": "Early 2000s",
    "year_approx": true,
-   "title": "Introduced through Kanye West",
-   "quote": "Pharrell was already a towering producer and style icon. Legend and West were still largely unknown artists.",
+   "title": "Two decades of friendship",
+   "quote": "Pharrell was already a towering producer and style icon.",
    "quote_by": "Roc Nation bio",
-   "story": "Legend and Pharrell first met through Kanye West, when Pharrell was already a towering producer and Legend and West were still largely unknown.",
+   "story": "They first met in the early 2000s, when Pharrell was already a towering producer and style icon and John was still largely unknown.",
    "source": "https://www.rocnation.com/news/john-legends-muse-album/"
   },
   {
@@ -2207,7 +2207,7 @@
    "id": "e019",
    "from": "john-legend",
    "to": "estelle",
-   "type": "cosign",
+   "type": "signed",
    "year": 2004,
    "title": "Mentor",
    "story": "John met Estelle in the early 2000s, mentored her and produced her debut, The 18th Day.",
@@ -2217,7 +2217,7 @@
    "id": "e020",
    "from": "john-legend",
    "to": "kanye-west",
-   "type": "cosign",
+   "type": "signed",
    "year": 2004,
    "title": "First signing to GOOD Music",
    "song": "Get Lifted (album)",
@@ -2395,7 +2395,7 @@
    "id": "e036",
    "from": "john-legend",
    "to": "estelle",
-   "type": "cosign",
+   "type": "signed",
    "year": 2008,
    "title": "Homeschool Records",
    "story": "She signed to John's Homeschool Records for Shine.",
@@ -3002,7 +3002,7 @@
    "id": "e090",
    "from": "pharrell",
    "to": "voices-of-fire",
-   "type": "cosign",
+   "type": "signed",
    "year": 2020,
    "title": "Voices of Fire",
    "place": "Hampton Roads, Virginia",
@@ -3145,7 +3145,7 @@
    "id": "e103",
    "from": "john-legend",
    "to": "pharrell",
-   "type": "cosign",
+   "type": "signed",
    "year": 2024,
    "title": "The 5 a.m. call",
    "place": "Paris to Los Angeles",
@@ -3181,7 +3181,7 @@
    "song": "The Birds Don't Sing",
    "quote": "Pharrell just loved what I did on the record.",
    "quote_by": "John Legend",
-   "story": "John sings on the opener of Let God Sort Em Out, Clipse's comeback, produced entirely by Pharrell. Pharrell loved the hook so much he proposed a whole album.",
+   "story": "John sings on the opener of Let God Sort Em Out, Clipse's comeback, produced entirely by Pharrell. His vocal on it inspired Pharrell to build a whole album around his voice.",
    "source": "https://en.wikipedia.org/wiki/Let_God_Sort_Em_Out",
    "also": [
     "https://www.rocnation.com/news/john-legends-muse-album/",
@@ -3366,8 +3366,8 @@
    "to": "kawan-prather",
    "type": "collab",
    "year": 2026,
-   "title": "Five Muse songs",
-   "song": "Pray For Ya, Her, Get Back, Are You Ok?, Under The Bridge",
+   "title": "Six Muse songs",
+   "song": "Pray For Ya, Her, Daylight, Get Back, Are You Ok?, Under The Bridge",
    "story": "Co-writer on Pray For Ya, Her, Get Back, Are You Ok? and Under The Bridge, and background vocals on Daylight.",
    "source": "https://music.apple.com/us/song/her/6808358532",
    "also": [
@@ -3409,7 +3409,7 @@
    "year": 2026,
    "title": "The introductions",
    "song": "Her Introduction, Under The Bridge Introduction",
-   "story": "Wrote and conducted Her Introduction and Under The Bridge Introduction; conductor across the album.",
+   "story": "Wrote Her Introduction, co-wrote Under The Bridge Introduction with Pharrell, and conducts strings across the album.",
    "source": "https://music.apple.com/us/song/her-introduction/6808358307",
    "also": [
     "https://music.apple.com/us/song/under-the-bridge-introduction/6808358538"
@@ -3530,7 +3530,7 @@
    "year": 2026,
    "title": "The horns",
    "song": "Muse, Pray For Ya, Get Back and more",
-   "story": "Horn arranger and alto sax on Muse, arrangements on seven more songs.",
+   "story": "Horn arranger and alto sax on Muse, and an arranger on nine more songs.",
    "source": "https://music.apple.com/us/song/muse/6808358305",
    "also": [
     "https://en.wikipedia.org/wiki/Terrace_Martin",
@@ -4008,7 +4008,7 @@
    "id": "x030",
    "from": "dr-dre",
    "to": "eminem",
-   "type": "cosign",
+   "type": "signed",
    "year": 1998,
    "title": "Aftermath",
    "story": "Dr. Dre signed Eminem to Aftermath and produced The Slim Shady LP.",
@@ -4041,7 +4041,7 @@
    "id": "x033",
    "from": "usher",
    "to": "justin-bieber",
-   "type": "cosign",
+   "type": "signed",
    "year": 2008,
    "title": "Raymond Braun Media Group",
    "story": "Usher and Scooter Braun signed a teenage Justin Bieber.",
@@ -4187,7 +4187,7 @@
   {
    "node": "kawan-prather",
    "title": "From A&R to co-writer",
-   "text": "Kawan Prather was the A&R on Evolver in 2008. On Muse he co-writes five songs: Pray For Ya, Her, Get Back, Are You Ok? and Under The Bridge."
+   "text": "Kawan Prather was the A&R on Evolver in 2008. On Muse he co-writes five songs (Pray For Ya, Her, Get Back, Are You Ok? and Under The Bridge) and sings background vocals on a sixth, Daylight."
   },
   {
    "node": "usher",
