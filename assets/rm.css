@@ -42,3 +42,10 @@ body.rm-type .h1-b{font-weight:300!important}
 .egot{top:var(--rmnav)!important}
 .pl-mapwrap{top:var(--rmnav)!important}
 @media (min-width:900px){.deck-col{top:calc(var(--rmnav) + 24px)!important}}
+
+/* Oct 23: nav always fully visible (no sideways scroll), brighter and larger */
+.rm-nav-in{flex-wrap:wrap!important;overflow:visible!important;justify-content:center!important;gap:10px 26px!important;padding:14px 16px!important}
+.rm-nav a{font-size:15px!important;font-weight:600!important;letter-spacing:.12em!important;color:#efe7d4!important}
+.rm-nav a[aria-current=page]{color:#e2bd6f!important;box-shadow:inset 0 -2px 0 #e2bd6f!important}
+@media(max-width:700px){.rm-nav-in{display:grid!important;grid-template-columns:repeat(4,auto);justify-content:space-between!important;gap:12px 10px!important;padding:12px 14px!important}.rm-nav a{font-size:13.5px!important;letter-spacing:.08em!important;text-align:center;padding:6px 0!important}}
+@media(max-width:360px){.rm-nav a{font-size:12px!important;letter-spacing:.04em!important}}
