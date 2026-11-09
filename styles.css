@@ -196,3 +196,14 @@ cite a{text-decoration-color:rgba(255,255,255,0.108)}
   .toc{grid-area:toc;max-width:none}
   .h1-a,.h1-b{font-size:118px}
 }
+
+/* Play Muse */
+.play h2{text-align:center}
+.play .eyebrow{justify-content:center}
+.play-list{list-style:none;padding:0;margin:0 auto 36px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.play-list li{border:1px solid #d6b06a;color:#f7f7f7;padding:10px 20px;border-radius:3px;font-weight:600;letter-spacing:.04em}
+.play-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:0 0 28px}
+.btn.btn-line{background:transparent;color:#d6b06a;border:1px solid #d6b06a;padding:15px 29px}
+.btn.btn-line:hover{background:#d6b06a;color:#0d0d0d}
+.play-note{font-size:15px;color:#bdbdbd;max-width:560px}
+.play-note a{color:#d6b06a}
