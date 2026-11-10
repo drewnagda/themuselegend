@@ -49,3 +49,8 @@ body.rm-type .h1-b{font-weight:300!important}
 .rm-nav a[aria-current=page]{color:#e2bd6f!important;box-shadow:inset 0 -2px 0 #e2bd6f!important}
 @media(max-width:700px){.rm-nav-in{display:grid!important;grid-template-columns:repeat(4,auto);justify-content:space-between!important;gap:12px 10px!important;padding:12px 14px!important}.rm-nav a{font-size:13.5px!important;letter-spacing:.08em!important;text-align:center;padding:6px 0!important}}
 @media(max-width:360px){.rm-nav a{font-size:12px!important;letter-spacing:.04em!important}}
+
+/* Nov 10: Play tab (home #play) in the nav; 9 links sit as an even 3x3 grid on phones; land below the sticky nav */
+@media(max-width:700px){.rm-nav-in{grid-template-columns:repeat(3,auto)!important}}
+#play{scroll-margin-top:var(--rm-nav-h,72px)}
+@media(max-width:700px){#play{scroll-margin-top:var(--rm-nav-h,152px)}}
